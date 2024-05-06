@@ -31,4 +31,25 @@ pour calculer l'aire etant donné que je ne peux savoir quel côoté est la haut
 ![alt text](image.png)
 
 
- .
+ Problem 3 : credit Card Mask 
+ Usually when you buy something, you're asked whether your credit card number, phone number or answer to your most secret question is still correct. However, since someone could look over your shoulder, you don't want that shown on your screen. Instead, we mask it.
+
+Your task is to write a function maskify, which changes all but the last four characters into '#'.
+
+Examples (input --> output):
+"4556364607935616" --> "############5616"
+     "64607935616" -->      "#######5616"
+               "1" -->                "1"
+                "" -->                 ""
+
+// "What was the name of your first pet?"
+"Skippy" --> "##ippy"
+"Nananananananananananananananana Batman!" --> "####################################man!"
+
+Algorithme  : 
+
+- transformer l'argument en tableau 
+- Couper le tableau au  niveau du caractère en 4e position avant la fin du tableau  et enregistrer dans une variable 
+- lancer une boucle qui entre des "#" dans une autre liste selon le nombre d'élémnt avant la 4e lettre avant la fin de la liste 
+
+- Joindre ces deux tableau et creer une seule chaine de caractère e lancer les test 
