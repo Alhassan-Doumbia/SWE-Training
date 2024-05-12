@@ -110,4 +110,24 @@ Implement the function which takes an array containing the names of people that 
 ["Jacob", "Alex"]                 -->  "Jacob and Alex like this"
 ["Max", "John", "Mark"]           -->  "Max, John and Mark like this"
 ["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
+
+### Problem 9 : Bug Fixing #6 
+
+Switch/Case - Bug Fixing #6
+Oh no! Timmy's evalObject function doesn't work. He uses Switch/Cases to evaluate the given properties of an object, can you fix timmy's function?
+
+function evalObject(value){
+  var result = 0;
+  switch(value.operation){
+    case'+': result = value.a + value.b;
+    case'-': result = value.a - value.b;
+    case'/': result = value.a / value.b;
+    case'*': result = value.a * value.b;
+    case'%': result = value.a % value.b;
+    case'^': result = Math.pow(value.a, value.b);
+  }
+  return result;
+}
+
+Solution : we  got to add the break keyWord to each case statement 
 ---
