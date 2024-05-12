@@ -70,4 +70,31 @@ For example, if we run 9119 through the function, 811181 will come out, because 
 
 Happy Coding!
 
+
+## Problem 5 : 
+You take your son to the forest to see the monkeys. You know that there are a certain number there (n), but your son is too young to just appreciate the full number, he has to start counting them from 1.
+
+As a good parent, you will sit and count with him. Given the number (n), populate an array with all numbers up to and including that number, but excluding zero.
+
+For example(Input --> Output):
+
+10 --> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+ 1 --> [1]
+
+
+ ## Problem 6 : 
+  You have to write a function that describe Leo:
+
+
+if oscar was (integer) 88, you have to return "Leo finally won the oscar! Leo is happy".
+if oscar was 86, you have to return "Not even for Wolf of wallstreet?!"
+if it was not 88 or 86 (and below 88) you should return "When will you give Leo an Oscar?"
+if it was over 88 you should return "Leo got one already!"
+
+
+### Problem 7 : Bug fixing 
+Unfinished Loop - Bug Fixing #1
+Oh no, Timmy's created an infinite loop! Help Timmy find and fix the bug in his unfinished for loop!
+
+Solution : we should incremet the counter variable 
 ---
