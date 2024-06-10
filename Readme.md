@@ -138,5 +138,28 @@ Example
 filter_list([1,2,'a','b']) == [1,2]
 filter_list([1,'a','b',0,15]) == [1,0,15]
 filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+
+
+### Problem 11 : firstonRepeatingLetter
+
+Write a function named first_non_repeating_letter† that takes a string input, and returns the first character that is not repeated anywhere in the string.
+
+For example, if given the input 'stress', the function should return 't', since the letter t only occurs once in the string, and occurs first in the string.
+
+As an added challenge, upper- and lowercase letters are considered the same character, but the function should return the correct case for the initial letter. For example, the input 'sTreSS' should return 'T'.
+
+If a string contains all repeating characters, it should return an empty string ("");
+
+† Note: the function is called firstNonRepeatingLetter for historical reasons, but your function should handle any Unicode character.
+
+Solution : 
+
+- Identify repeating letter by putting all of the input into lowercase 
+- for each letter we have to cout the exact number of occurences according to their place in the word (considering them like an array then)
+- we are going to create an array which wwill be filled with the number of occurences of each letter according to their place
+- in the Array with the number of occurence ,we are going to take the lowest index aong those who got one Occurence 
+- and this index will represent the index of the first non Repeating letter in the given word 
+
+Let's code that 
 ---
 
