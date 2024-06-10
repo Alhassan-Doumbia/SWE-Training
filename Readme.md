@@ -2,7 +2,7 @@
 
 ---
 
-# GOMYCODE CodeWars Problem Solutions
+#  CodeWars Problem Solutions
 
 ## Problem 1: Vowel Counter
 
