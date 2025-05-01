@@ -192,35 +192,23 @@ Examples
 493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
 
 
-## Problem 14 : Sum of pairs 
+## Problem 14 : Lobjan Number 
+Lojban Numbers
+Counting in Lojban, an artificial language developed over the last forty years, is easier than in most languages. The numbers from zero to nine are:
 
-Sum of Pairs
-Given a list of integers and a single sum value, return the first two values (parse from the left please) in order of appearance that add up to form the sum.
+1 pa 4 vo 7 ze
+2 re 5 mu 8 bi 0 no
+3 ci 6 xa 9 so
+Larger numbers are created by gluing the digits together. For example, 123 is pareci.
 
-If there are two or more pairs with the required sum, the pair whose second element has the smallest index is the solution.
+Write a program that reads in a Lojban string (representing a number less than or equal to 1,000,000) and outputs it in numbers.
 
-sum_pairs([11, 3, 7, 5],         10)
-#              ^--^      3 + 7 = 10
-== [3, 7]
-
-sum_pairs([4, 3, 2, 3, 4],         6)
-#          ^-----^         4 + 2 = 6, indices: 0, 2 *
-#             ^-----^      3 + 3 = 6, indices: 1, 3
-#                ^-----^   2 + 4 = 6, indices: 2, 4
-#  * the correct answer is the pair whose second value has the smallest index
-== [4, 2]
-
-sum_pairs([0, 0, -2, 3], 2)
-#  there are no pairs of values that can be added to produce 2.
-== None/nil/undefined/Nothing (Based on the language)
-
-sum_pairs([10, 5, 2, 3, 7, 5],         10)
-#              ^-----------^   5 + 5 = 10, indices: 1, 5
-#                    ^--^      3 + 7 = 10, indices: 3, 4 *
-#  * the correct answer is the pair whose second value has the smallest index
-== [3, 7]
-Negative numbers and duplicate numbers can and will appear.
-
-NOTE: There will also be lists tested of lengths upwards of 10,000,000 elements. Be sure your code doesn't time out.
+Example:
+renonore  # Lojban string
+2002  # Number
+Input/Output
+[input] string representing the number in Lojban pareci
+Constraints: Lojban number ≤ 1,000,000
+[output] integer representing the Lojban number 123
 ---
 
